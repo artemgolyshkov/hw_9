@@ -39,41 +39,37 @@ public class Main {
         arrOne [1] = 2;
         arrOne [2] = 3;// Объявили первый массив
         for (int i = arrOne.length - 1; i >=0; i--){
-            System.out.printf(arrOne[i] + ", ");
+            System.out.print(arrOne[i]);
+            if (i != 0){
+                System.out.print(", ");
+            }
         }
-            System.out.println();
+        System.out.println();
 
         double[] arrTwo = {1.57, 7.654, 9.986}; // Объявили второй массив
         for (int q = arrTwo.length - 1; q >=0; q--){
-            System.out.printf(arrTwo[q] + ", ");
+            System.out.print(arrTwo[q]);
+            if (q != 0){
+                System.out.print(", ");
+            }
         }
-            System.out.println();
-
+        System.out.println();
         int[] arrFree = {25,78,106}; // Объявили третий массив
         for (int w = arrFree.length - 1; w >=0; w--) {
-            System.out.printf(arrFree[w] + ", ");
+            System.out.print(arrFree[w]);
+            if (w != 0){
+                System.out.printf(", ");
+            }
         }
         System.out.println();
         System.out.println("Задача 4");
-        int [] arr4 = new int[3];
-        arr4 [0] = 1;
-        arr4 [1] = 2;
-        arr4 [2] = 3;
-        if (arr4 [0] % 2 == 0) {
-            System.out.println(arr4[0]);
-           } else {
-            arr4[0] = arr4[0] + 1;
-        }
-        if ((arr4 [1] % 2) == 0) {
-        } else {
-                arr4[1] = arr4[1] + 1;
+        int [] arr4 = {1, 2, 3};
+
+        for (int a = 0; a < arr4.length; a++){
+            if (arr4[a] % 2 != 0 ) {
+                arr4[a] += 1;
             }
-        if ((arr4 [2] % 2) == 0) {
-        } else {
-            arr4[2] = arr4[2] + 1;
         }
-        for (int a = 0; a < 3; a++){
-            System.out.printf(arr4[a] + ", ");
-        }
+        System.out.println(Arrays.toString(arr4));
     }
     }
